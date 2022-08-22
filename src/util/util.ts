@@ -22,6 +22,7 @@ export async function filterImageFromURL(inputURL: string): Promise<string> {
           resolve(__dirname + outpath);
         });
     } catch (error) {
+      //creates Could not find MIME for Buffer <null> error, so I put it in the quotation
       reject(error);
     }
   });
